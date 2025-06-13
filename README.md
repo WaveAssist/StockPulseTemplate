@@ -1,7 +1,7 @@
 <h1 align="center">StockPulse</h1>
 
 <p align="center">
-  <a href="https://waveassist.io/templates/StockPulse">
+  <a href="https://waveassist.io/templates/stockpulse-template">
     <img src="https://img.shields.io/badge/Deploy_with-WaveAssist-007F3B" alt="Deploy with WaveAssist" />
   </a>
   <img src="https://img.shields.io/badge/StockPulse-AI%20Powered%20Stock%20Updates-blue" alt="StockPulse Badge" />
@@ -21,7 +21,7 @@ StockPulse runs on [WaveAssist](https://waveassist.io) to provide instant stock 
 ## One-Click Deploy on WaveAssist
 
 <p>
-  <a href="https://waveassist.io/templates/StockPulse" target="_blank">
+  <a href="https://waveassist.io/templates/stockpulse-template" target="_blank">
     <img src="https://waveassistapps.s3.us-east-1.amazonaws.com/public/Button.png" alt="Deploy on WaveAssist" width="230" />
   </a>
 </p>
@@ -32,7 +32,7 @@ Deploy StockPulse quickly on [WaveAssist](https://waveassist.io) — a zero-infr
 
 #### How to Use:
 
-1. Click the button above or go to [waveassist.io/templates/StockPulse](https://waveassist.io/templates/StockPulse)
+1. Click the button above or go to [waveassist.io/templates/stockpulse-template](https://waveassist.io/templates/stockpulse-template)
 2. Enter the following variables in the Variables tab (customize as needed):
     - **tickers**: Provide a comma-separated list of stock tickers you want to monitor (e.g., `AAPL,GOOGL,MSFT`).
 3. Run the starting node:
