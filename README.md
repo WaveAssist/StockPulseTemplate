@@ -34,7 +34,7 @@ Deploy StockPulse quickly on [WaveAssist](https://waveassist.io) — a zero-infr
 
 1. Click the button above or go to [waveassist.io/templates/stockpulse-template](https://waveassist.io/templates/stockpulse-template)
 2. Enter the following variables in the Variables tab (customize as needed):
-    - **tickers**: Provide a comma-separated list of stock tickers you want to monitor (e.g., `AAPL,GOOGL,MSFT`).
+    - **tickers**: Provide a comma-separated list of stock tickers you want to monitor (e.g., `AAPL,GOOGL,MSFT`). In **yfinance** format. 
 3. Run the starting node:
    - **StockTickers**: Fetches and prepares the list of stock tickers.
 4. Click **Deploy** to schedule and automate your stock pulse workflow.

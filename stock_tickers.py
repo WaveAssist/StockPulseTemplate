@@ -1,5 +1,7 @@
 import waveassist
 waveassist.init()
+
+
 import yfinance as yf
 
 tickers_str = waveassist.fetch_data("tickers")
@@ -18,3 +20,4 @@ for ticker in tickers:
         data_to_store[ticker] = {"error": str(e)}
 
 waveassist.store_data("ticker_data", data_to_store)
+print("Ticker data stored successfully.")

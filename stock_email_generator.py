@@ -1,6 +1,7 @@
 import waveassist
 waveassist.init()
-import pandas as pd
+
+# import pandas as pd
 
 # Fetch the stock data DataFrame from the previous node
 stock_data = waveassist.fetch_data("stock_dataframe")
@@ -51,8 +52,8 @@ html_content = f"""
     </style>
 </head>
 <body>
-    <h2>📈 StockPulse - Morning Market Snapshot</h2>
-    <p>Here's your daily market pulse for the top 5 tickers:</p>
+    <h2>📈 StockPulse - Market Snapshot</h2>
+    <p>Here's your daily market pulse for your tickers:</p>
     {html_table}
     <p><small>Data provided by Yahoo Finance via yfinance</small></p>
 </body>
@@ -61,8 +62,9 @@ html_content = f"""
 
 # Send the email
 waveassist.send_email(
-    subject="📊 StockPulse - Morning Market Snapshot",
+    subject="📊 StockPulse - Market Snapshot",
     html_content=html_content
 )
 
 waveassist.store_data("email_sent", True)
+print("✅ Stock email sent successfully.")
