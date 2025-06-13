@@ -1,0 +1,25 @@
+name: StockPulse
+description: ''
+nodes:
+- key: stock_tickers
+  name: StockTickers
+  file_name: stock_tickers.py
+  starting_node: true
+  schedule:
+    cron: '0 9 * * 1-5'  # Every weekday at 9 AM
+    timezone: 'America/New_York'
+- key: ticker_price_analysis
+  name: TickerPriceAnalysis
+  file_name: ticker_price_analysis.py
+  run_after:
+  - stock_tickers
+- key: stock_email_generator
+  name: StockEmailGenerator
+  file_name: stock_email_generator.py
+  run_after:
+  - ticker_price_analysis
+requirements:
+- yfinance
+variables:
+  - name: tickers
+    value: 'AAPL,GOOGL, MSFT, AMZN, TSLA'
